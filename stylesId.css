@@ -1,0 +1,169 @@
+
+#fonts-container {
+    width: 15.6rem;
+}
+
+#search-fonts {
+    border: none;
+    outline: none;
+    width: 12rem;
+    letter-spacing: 0.1rem;
+}
+
+
+#fonts-dropdown {
+    margin-top: 0.5rem;
+    width: 25rem;
+    max-height: 20rem;
+}
+ 
+
+
+#size-container {
+    width: 5.6rem;
+}
+
+#search-size {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 2rem;
+    border: none;
+    outline: none;
+}
+#search-size::-webkit-outer-spin-button,
+#search-size::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+#size-dropdown {
+    margin-top: 0.5rem;
+    margin-left: 17.3rem;
+    width: 7rem;
+    max-height: 20rem;
+}
+
+
+
+
+
+#container-music{
+    display: inline-block;
+}
+
+
+#music-img{
+    margin-left: 7rem;
+    border: 0.3rem solid grey;
+}
+
+#music-play-img{
+    width: 3.7rem;
+    height: 3.7rem;
+    border: 0.2rem solid darkblue;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#music-dropdown{
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left: 4.4rem;
+    width: 5rem;
+    height: 15rem;
+    position: fixed;
+    display: none;
+}
+
+
+
+#bold::before {
+    font-size: 1.5rem;
+    content: "\1D401";
+}
+
+#italic::before {
+    font-size: 1.5rem;
+    content: "\1D43C";
+}
+
+
+#underline::before {
+    font-size: 1.5rem;
+    content: "\2286";
+}
+
+#strikethrough::before {
+    font-size: 1.5rem;
+    content: "\2209";
+}
+
+#container-music{
+    display: inline-block;
+}
+
+
+#Arial {
+    font-family: Arial, sans-serif;
+}
+
+#Verdana {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#TimesNewRoman {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#Georgia {
+    font-family: Georgia, serif;
+}
+
+#CourierNew {
+    font-family: "Courier New", Courier, monospace;
+}
+
+#Tahoma {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#TrebuchetMS {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#LucidaConsole {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+#Impact {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#ComicSansMS {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#PalatinoLinotype {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#Garamond {
+    font-family: Garamond, serif;
+}
+
+#CenturyGothic {
+    font-family: "Century Gothic", sans-serif;
+}
+
+#Calibri {
+    font-family: Calibri, Candara, sans-serif;
+}
+
+#Cambria {
+    font-family: Cambria, Cochin, serif;
+}

@@ -1,0 +1,304 @@
+body {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+      background-color: rgb(222, 240, 235);
+}
+
+body::-webkit-scrollbar {
+      width: 0.1rem;
+      /* background-color: #044d96; */
+}
+
+button:hover {
+      cursor: pointer;
+}
+
+input {
+      font-size: 1.5rem;
+      border-color: #A8D08D;
+      background-color: blanchedalmond;
+}
+
+input[type="color"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      width: 6.6rem;
+      height: 3.8rem;
+      border: none;
+      cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+      border-radius: 1.8rem;
+      box-shadow: 0 0 0 0.2rem #fffbff, 0 0 0 0.3rem #020929;
+}
+
+input[type="color"]::-moz-color-swatch {
+      border-radius: 1.8rem;
+      box-shadow: 0 0 0 0.2rem #ffffff, 0 0 0 0.3rem #020929;
+}
+
+input[type="range"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 60%;
+      height: 0.8rem;
+      background-color: lightpink;
+      border-radius: 2rem;
+      outline: none;
+      transition: background 0.7s;
+}
+
+input[type="range"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 0.8rem;
+      border-radius: 20px;
+      background: linear-gradient(to right, #344c65 50%, lightpink 50%);
+      outline: none;
+      transition: background 0.3s;
+      cursor: pointer;
+}
+
+/* Ползунок (Chrome, Safari, Edge) */
+input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #344c65;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+}
+
+/* Ползунок (Firefox) */
+input[type="range"]::-moz-range-thumb {
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #344c65;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+/* Ползунок (IE) */
+input[type="range"]::-ms-thumb {
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #344c65;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+
+
+.editing-tools {
+      width: auto;
+      height: auto;
+      position: sticky;
+      top: 0rem;
+      padding: 0.5rem;
+      padding-left: 2rem;
+      background-color: #044d96;
+}
+
+.flex {
+      display: flex;
+      gap: 1rem;
+}
+
+.flex>.section {
+      /* padding: 0rem 2.5rem 0rem 2.5rem; */
+      flex: 1;
+}
+
+.section {
+      align-items: center;
+}
+
+
+.search-style,
+.search-button {
+      border-color: #A8D08D;
+      background-color: #A8D08D;
+}
+
+.hide {
+      display: none;
+}
+
+.arrow {
+      width: 1rem;
+      height: 1rem;
+      transform: rotate(-135deg);
+      border-top: 0.2rem solid black;
+      border-left: 0.2rem solid black;
+      pointer-events: none;
+      transition: all 0.264s ease;
+      cursor: pointer;
+}
+
+
+.dropdown-style {
+      background-color: #2a93ad;
+      height: auto;
+      overflow: scroll;
+      overflow-x: hidden;
+      position: fixed;
+      top: 5rem;
+      box-sizing: content-box;
+      display: none;
+}
+
+.dropdown-style>ul {
+      padding-left: 0;
+      margin: 0;
+}
+
+.dropdown-style>ul>li:hover {
+      background-color: rgb(48, 230, 230);
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+}
+
+.dropdown-style>ul>li {
+      list-style: none;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+      letter-spacing: 0.2rem;
+      transition: all 0.32s ease-in;
+}
+
+.dropdown-style::-webkit-scrollbar {
+      width: 0.7rem;
+      background-color: #f9f9fd;
+}
+
+.dropdown-style::-webkit-scrollbar-thumb {
+      background-color: #50556e;
+}
+
+
+.search {
+      height: 2rem;
+      display: inline-block;
+      box-sizing: content-box;
+      border: 0.3rem solid #9cd08d;
+      border-radius: 0.3rem;
+}
+
+.search-button {
+      border: none;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      position: relative;
+      z-index: 1;
+}
+
+
+.button {
+      font-size: large;
+      border: none;
+      border-radius: 30%;
+      background-color: lightgray;
+      width: 4.5rem;
+      height: 2.5rem;
+      margin: 0.5rem;
+      transition: all 0.5s ease;
+}
+
+
+.text-format {
+      margin-left: 2rem;
+      display: inline-block;
+      box-sizing: border-box;
+      border: 0.2rem solid lightblue;
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+      padding-left: 0.3rem;
+      padding-right: 2.5rem;
+}
+
+.third {
+      border-right: none;
+}
+
+.music-head {
+      width: 9rem;
+      height: 9rem;
+      background-color: #f9f9fd;
+      border: 0.2rem solid darkblue;
+}
+
+
+[data-music="tango-of-death"] {
+      background-image: url(img/tango-of-death.webp);
+      background-size: cover;
+      /* чтобы изображение покрывало весь экран */
+      background-position: center;
+      /* центрирование изображения */
+      background-repeat: no-repeat;
+}
+
+[data-music="moonlight-sonata"] {
+      background-image: url(img/moonlight-sonata.webp);
+      background-size: cover;
+      /* чтобы изображение покрывало весь экран */
+      background-position: center;
+      /* центрирование изображения */
+      background-repeat: no-repeat;
+}
+
+[data-music="magic-flute"] {
+      background-image: url(img/magic-flute.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+[data-music="stop"] {
+      background-image: url(img/stop.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+
+.volume{
+      width: 13rem;
+}
+
+
+.page-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
+}
+
+.page {
+      width: 60rem;
+      height: 80rem;
+      padding: 6rem 4rem;
+      border: 0.4rem solid #044d96;
+      background-color: lightgrey;
+      box-sizing: border-box;
+      outline: none;
+}
+
+
+.text{
+      display: block;
+      background-color: #2a93ad;
+      font-size: larger;
+      text-align: center;
+}

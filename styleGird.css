@@ -1,0 +1,57 @@
+html,
+body {
+      height: 100vh;
+}
+
+html {
+      font-size: 62.5%;
+}
+
+body {
+      display: grid;
+      /* grid-template-rows: 1fr 2fr 1fr; */
+      grid-template-areas:
+            "header"
+            "section"
+            "footer";
+            position: relative;
+}
+
+header {
+      grid-area: header;
+}
+
+section {
+      grid-area: section;
+   
+}
+
+footer {
+      grid-area: footer;
+}
+
+
+
+
+@media (max-width:770px) {
+      html {font-size: 46%;}
+}
+
+@media (min-width: 1024px) { 
+      html { font-size: 52.5%; } /* Обычные ноутбуки */
+    }
+    
+    @media (min-width: 1440px) { 
+      html { font-size: 62.5%; } /* Большие ноутбуки (L) */
+    }
+    
+    @media (min-width: 2560px) { 
+      html { font-size: 119.5%; } /* 4К экраны */
+    }
+
+    
+
+
+/* @media (max-width:) {}
+
+@media (max-width:) {} */
