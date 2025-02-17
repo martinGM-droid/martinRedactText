@@ -30,7 +30,13 @@ footer {
       grid-area: footer;
 }
 
-
+@media (max-width:427px) {
+      html{font-size: 45%;}
+    .page{
+      width: 80rem;
+      height: 150rem;
+    }  
+}
 
 
 @media (max-width:770px) {
