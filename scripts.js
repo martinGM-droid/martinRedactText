@@ -256,6 +256,7 @@ const button = document.querySelectorAll('.button')
 button.forEach((button) => {
       button.dataset.active = "false";
       button.addEventListener('click', function () {
+            page.focus();
             modifyText(button.id, false, null)
             toggleState(button);
       })
