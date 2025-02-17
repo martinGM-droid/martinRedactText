@@ -253,14 +253,25 @@ function toggleState(button) {
 }
 
 const button = document.querySelectorAll('.button')
+// button.forEach((button) => {
+//       button.dataset.active = "false";
+//       button.addEventListener('click', function () {
+//             modifyText(button.id, false, null)
+//             toggleState(button);
+//       })
+// })
+
+
 button.forEach((button) => {
       button.dataset.active = "false";
       button.addEventListener('click', function () {
-            page.focus();
-            modifyText(button.id, false, null)
+            modifyText(button.id, false, null);
             toggleState(button);
-      })
-})
+            setTimeout(() => {
+                  page.focus();
+            }, 50);
+      });
+});
 
 page.addEventListener('click', function () {
       modifyText('fontName', false, searchFonts.value)
