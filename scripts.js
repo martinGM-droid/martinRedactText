@@ -269,7 +269,7 @@ button.forEach((button) => {
             toggleState(button);
             setTimeout(() => {
                   page.focus();
-            }, 50);
+            }, 0);
       });
 });
 
