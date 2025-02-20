@@ -1,0 +1,22 @@
+.flex {
+      display: flex;
+     
+}
+.section {
+      gap: 1rem;
+      padding: 0rem 2.5rem 0rem 2.5rem;
+      align-items: center;
+      flex: 1;
+      box-sizing: border-box;
+}
+
+
+.flex-column{
+      display: flex;
+      flex-direction: column;
+}
+
+.grow{
+      flex-grow: 1;
+}   
+
