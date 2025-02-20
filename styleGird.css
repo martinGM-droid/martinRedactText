@@ -107,9 +107,9 @@ footer {
       .section {
             padding: 0;
       }
-      /* .dropdown-style{
-            top: 5rem
-      } */
+      .dropdown-style{
+            top: 3rem
+      }
 }
 
 @media (max-width:267px){
